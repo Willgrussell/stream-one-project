@@ -1,0 +1,132 @@
+/*css for background of url*/
+body {
+    padding-top: 80px;
+    background-image: url(images/NFL-Football.jpg);
+    background-size: cover;
+    font-family: 'Roboto', 'Oslwald', sans-serif;
+}
+
+/*css for footer*/
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    background: rgba(172, 172, 172, 0.88);
+    text-align: center;
+    height: 130px;
+    font-size: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*custom css for navbar*/
+.nav ul li{
+    height: 60px;
+    font-family: 'Roboto';
+    font-size: 25px;
+    padding: 5px 5px;
+}
+
+/*custom css for navbar when cursor hovers*/
+.nav ul li:hover{
+    background-color: #696868;
+    transition: all .3s ease;
+}
+
+/*css for page header title on home page*/
+.page-header {
+        color: rgb(167, 167, 167);
+        text-align: center;
+        margin-bottom: 360px;
+    }
+
+/*css for media & team titles*/
+.name{
+    text-align: center;
+    color: #000000;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+/*css for media titles when cursor hovers*/
+.highlight_text{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+/*css for paragraphs in tead page*/
+.card{
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+/**/
+.sportFig{
+    color: #f7f8f7;
+}
+
+/**/
+input:focus{
+    background-color: #8fe860;
+}
+
+/**/
+fieldset{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+/*news page jumbotron css*/
+.jumbotron{
+    margin-bottom: 70px;
+}
+
+/*team page css*/
+.team{
+    margin-bottom: 110px;
+}
+/*media page css*/
+
+
+/*contact page css*/
+.registration{
+    text-align: center;
+    margin-bottom: 420px;
+}
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {
+    /*css specific properties col-lg-**/
+    
+}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*css specific properties col-md-**/
+    
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*css specific properties col-sm-**/
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    /*css specific properties col-xs-**/
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+    /*css specific properties col-xs-* or none for default*/
+    
+}
+
