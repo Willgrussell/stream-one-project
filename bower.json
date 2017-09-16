@@ -1,0 +1,22 @@
+{
+  "name": "stream-one-project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "<Will Russell> <<russellgwill@gmail.com>>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Willgrussell/stream-one-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.6",
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7"
+  }
+}
