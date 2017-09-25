@@ -49,8 +49,8 @@ footer {
 }
 
 /*css for media titles when cursor hovers*/
-.highlight_text{
-    background-color: yellowgreen;
+.highlight{
+    background-color: rgb(205, 98, 50);
     cursor: pointer;
 }
 
@@ -89,8 +89,9 @@ fieldset{
 
 /*contact page css*/
 .registration{
+    margin-top: 100px;
     text-align: center;
-    margin-bottom: 420px;
+    margin-bottom: 300px;
 }
 
 /* Large desktops and laptops */
