@@ -1,8 +1,6 @@
 /*css for background of url*/
 body {
     padding-top: 80px;
-    background-image: url(images/NFL-Football.jpg);
-    background-size: cover;
     font-family: 'Roboto', 'Oslwald', sans-serif;
 }
 
@@ -14,7 +12,7 @@ footer {
     text-align: center;
     height: 130px;
     font-size: 10px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -37,13 +35,12 @@ footer {
 .page-header {
         color: rgb(167, 167, 167);
         text-align: center;
-        margin-bottom: 360px;
     }
 
 /*css for media & team titles*/
 .name{
     text-align: center;
-    color: #000000;
+    color: rgb(167, 167, 167);
     border: 1px solid red;
     border-radius: 5px;
 }
@@ -75,24 +72,33 @@ fieldset{
     background-color: rgba(255, 0, 0, 0.8);
 }
 
-/*news page jumbotron css*/
-.jumbotron{
-    margin-bottom: 70px;
+/*css for news articles*/
+.news{
+    background-color: brown;
+}
+.news:last-child{
+    margin-bottom: 200px;
+}
+/*css for video article*/
+.video{
+    margin-bottom: 200px;
 }
 
 /*team page css*/
 .team{
-    margin-bottom: 110px;
+    margin-bottom: 300px;
 }
-/*media page css*/
-
 
 /*contact page css*/
 .registration{
-    margin-top: 100px;
     text-align: center;
-    margin-bottom: 300px;
 }
+/*Media button css*/
+.mediaButton{
+    display: block;
+    
+}
+
 
 /* Large desktops and laptops */
 
