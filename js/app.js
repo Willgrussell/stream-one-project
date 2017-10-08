@@ -1,4 +1,4 @@
-angular.module('SnapCount', ['ngRoute', 'RouteControllers']);
+angular.module('SnapCount', ['ngRoute', 'RouteControllers', 'ngAnimate']);
 
 angular.module('SnapCount').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true); //Enables href routing without hashes

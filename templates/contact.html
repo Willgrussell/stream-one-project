@@ -3,42 +3,49 @@
 </div>
 
 <div class="container registration">
-        <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#register-modal">Register</button>
+        <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#register-modal">Registration</button>
     </div>
     <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="register-form-modal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="register-form-header"></h4> </div>
+                    <h4 class="modal-title" id="register-form-header">Registration Form</h4> </div>
                 <div class="modal-body">
                     <form name="registrationForm" ng-submit="submitForm()" novalidate>
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" name="firstName" class="form-control" ng-model="register.firstName" required>
-                            <p ng-show="registration.firstName.$pristine" class="help-block">A first name is required</p>
+                            <input type="text" name="firstName" class="form-control" ng-model="register.firstName" autocomplete="on" required>
+                            <p ng-show="registrationForm.firstName.$pristine" class="help-block">A first name is required</p>
                         </div>
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" name="lastName" class="form-control" ng-model="register.lastName" required>
-                            <p ng-show="registration.lastName.$pristine" class="help-block">A last name is required</p>
+                            <input type="text" name="lastName" class="form-control" ng-model="register.lastName" autocomplete="on" required>
+                            <p ng-show="registrationForm.lastName.$pristine" class="help-block">A last name is required</p>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" name="email" class="form-control" ng-model="register.email" required>
-                            <p ng-show="registration.email.$pristine" class="help-block">An email is required</p>
+                            <input type="email" name="email" class="form-control" ng-model="register.email" autofocus autocomplete="on" required>
+                            <p ng-show="registrationForm.email.$pristine" class="help-block">An email is required</p>
                         </div>
                         <div class="form-group">
                             <label>Event</label>
-                            <select class="form-control" name="event" ng-model="register.event">
-                                <option value="Podcast-Show">Podcast Show</option>
-                                <option value="Visit">Visit</option>
-                                <option value="Game">Game</option>
+                            <select class="form-control" name="event" ng-model="register.event" required>
+                                <option value="Podcast-Show">Podcast Show - £100.00</option>
+                                <option value="Visit">Visit - £50.00</option>
+                                <option value="Game">Game - £200.00</option>
                             </select>
+                            <p ng-show="registrationForm.event.$pristine" class="help-block">Please choose an Event</p>
+                        </div>
+                        <div>
+                            <label for="Event">Choose a date</label>
+                            <input type="date" id="Event" name="Event Date" ng-model="register.date" required>
+                            <span class="validity"></span>
+                            <p ng-show="registrationForm.date.$pristine" class="help-block">Please choose a Date</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid">Submit</button>
                         </div>
                     </form>
                 </div>

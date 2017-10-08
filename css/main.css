@@ -4,19 +4,6 @@ body {
     font-family: 'Roboto', 'Oslwald', sans-serif;
 }
 
-/*css for footer*/
-footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    background: rgba(172, 172, 172, 0.88);
-    text-align: center;
-    height: 130px;
-    font-size: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /*custom css for navbar*/
 .nav ul li{
     height: 60px;
@@ -24,34 +11,71 @@ footer {
     font-size: 25px;
     padding: 5px 5px;
 }
+/*css for logo image on nav-bar*/
+.logo{
+    padding-bottom: 5px;
+}
 
 /*custom css for navbar when cursor hovers*/
 .nav ul li:hover{
-    background-color: #696868;
-    transition: all .3s ease;
+    background-color: #717171;
+}
+
+/*css for navbar when collapsed*/
+.collapse li{
+    text-align: center;
+}
+
+/*main content css*/
+#main{
+    height: 1200px;
+}
+
+/*css for footer*/
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background: rgba(172, 172, 172, 0.88);
+    height: 180px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*fieldset css for mailing form*/
+#mail{
+    border-radius: 20px;
+    background-color: rgba(1, 1, 162, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+/*mailing form css*/
+.mail{
+    background-color: rgb(230, 64, 64);
+    font-size: 15px;
+    color: white;
+    transform: rotate(-10deg);
+    padding: 5px;
+    border-radius: 20px;
+}
+/*snapcount logo image css inside footer div*/
+#scLogo{
+    margin-top: 10px;
+}
+
+/*social div css for social information*/
+.social{
+    text-align: center;
+    font-size: 10px;
 }
 
 /*css for page header title on home page*/
 .page-header {
         color: rgb(167, 167, 167);
         text-align: center;
-    }
-
-/*css for media & team titles*/
-.name{
-    text-align: center;
-    color: rgb(167, 167, 167);
-    border: 1px solid red;
-    border-radius: 5px;
 }
 
-/*css for media titles when cursor hovers*/
-.highlight{
-    background-color: rgb(205, 98, 50);
-    cursor: pointer;
-}
-
-/*css for paragraphs in tead page*/
+/*css for paragraphs in team page*/
 .card{
     background-color: burlywood;
     border-radius: 10px;
@@ -67,18 +91,23 @@ input:focus{
     background-color: #8fe860;
 }
 
-/**/
-fieldset{
-    background-color: rgba(255, 0, 0, 0.8);
-}
 
 /*css for news articles*/
-.news{
+.newsCard a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.newsCard a:hover{
+    color: chartreuse; 
+}
+
+.newsCard p{
     background-color: brown;
+    border-radius: 10px;
+    margin: 5px;
 }
-.news:last-child{
-    margin-bottom: 200px;
-}
+
 /*css for video article*/
 .video{
     margin-bottom: 200px;
@@ -93,10 +122,29 @@ fieldset{
 .registration{
     text-align: center;
 }
-/*Media button css*/
+/*css for mediaButtons*/
 .mediaButton{
-    display: block;
-    
+    margin: 10px;
+}
+
+/*css for media titles when cursor hovers*/
+.highlight:hover{
+    color: rgb(205, 98, 50);
+}
+
+button:hover{
+    cursor: pointer;
+}
+ 
+/*Animations*/
+
+/*Animation for ng-view on all pages*/
+#main.ng-enter{
+    transition: 0.3s linear all;
+    opacity: 0;
+}
+#main.ng-enter ng-enter-active{
+    opacity: 1;
 }
 
 
@@ -104,7 +152,10 @@ fieldset{
 
 @media (min-width: 1200px) {
     /*css specific properties col-lg-**/
-    
+    #scLogo{
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 
@@ -112,7 +163,15 @@ fieldset{
 
 @media (min-width: 992px) and (max-width: 1199px) {
     /*css specific properties col-md-**/
-    
+    .newsCard{
+        text-align: center;
+    }
+    .podcast .sportCard{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
 }
 
 
@@ -120,6 +179,14 @@ fieldset{
 
 @media (min-width: 768px) and (max-width: 991px) {
     /*css specific properties col-sm-**/
+   .newsCard{
+        text-align: center;
+    }
+    .podcast .sportCard{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
 }
 
 
@@ -127,6 +194,14 @@ fieldset{
 
 @media (max-width: 767px) {
     /*css specific properties col-xs-**/
+     .newsCard{
+        text-align: center;
+    }
+    .podcast .sportCard{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
 }
 
 
@@ -134,6 +209,13 @@ fieldset{
 
 @media (max-width: 480px) {
     /*css specific properties col-xs-* or none for default*/
-    
+    .newsCard{
+        text-align: center;
+    }
+    .podcast .sportCard{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
 }
 

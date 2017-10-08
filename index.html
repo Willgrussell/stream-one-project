@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapCount</title>
     <base href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="images/sc_icon_qSk_icon.ico">
     <!--Needed for Angular HTML5 Mode-->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -15,6 +16,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="bower_components/angular/angular.js" type="text/javascript"></script>
     <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+    <script src="bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
     <style type="text/css">
         body {
             background-image: URL(images/nfl-football.jpg);
@@ -45,24 +47,29 @@
             </ul>
         </div>
     </nav>
-    <div ng-view> </div>
+    <div ng-view id="main"> 
+    
+    </div>
     <footer class="col-12">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <figure class="hidden-xs hidden-sm"> <img src="/images/SC%20Logo%20Final%20White.png" alt="scLogo" width="100px" height="100px" class="logo"> </figure>
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4" id="scLogo">
+                    <figure> <img src="/images/SC%20Logo%20Final%20White.png" alt="scLogo" width="100px" height="100px" class="logo"> 
+                    </figure>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> <i class="fa fa-twitter fa-3x" aria-hidden="true"></i> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i> <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                <div class="social col-lg-4 col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> <i class="fa fa-twitter fa-3x" aria-hidden="true"></i> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i> <i class="fa fa-github fa-3x" aria-hidden="true"></i>
                     <p>Legal information | Cookie Privacy Policy</p>
                     <p>&copy; The SnapCount Podcast</p>
                     <p>By using this site you agree we can set and use cookies.</p>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <form action="" name="mailMe">
-                        <label for="join">Join the mailing list!</label><br>
-                        <label for="email">Email:</label><input type="email" name="email" placeholder="enter email here" required><br><br>
-                        <button type="submit" name="submit" class="btn btn-info btn-lg">Submit</button>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                   <fieldset id="mail">
+                       <form name="contactForm" ng-controller="contactForm" ng-submit="contactMe()">
+                        <label class="mail">Join the mailing list!</label><br>
+                        <input type="email" name="email" class="form-control" ng-model="contact.email" placeholder="Enter Email Here" required><br>
+                        <button type="submit" name="submit" class="btn btn-info btn-md" data-ng-disabled="contactForm.$invalid">Submit</button>
                     </form>
+                   </fieldset>
                 </div>
             </div>
         </div>
@@ -70,7 +77,6 @@
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/service.js"></script>
-    <script src="js/myscript.js"></script>
     <script src="js/directives.js"></script>
 </body>
 
