@@ -63,7 +63,8 @@ This application uses a single document page with main nav-bar. The site is powe
     - **BrowserStack** was used for automated cross browser testing.
 - [Proto.io](https://proto.io)
     - **Proto.io** was used to wireframe the original design and features of the website. Examples can be found inside **other** folder based inside project.
-- [Jasmine]()
+- [Jasmine](https://jasmine.github.io/)
+    - **Jasmine** has been used to test javascript code during my project.
 
 ## Contributing
 
