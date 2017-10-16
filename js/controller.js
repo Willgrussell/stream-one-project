@@ -27,12 +27,24 @@ angular.module('RouteControllers', [])
     })
     .controller('MediaController', function($scope) {
         $scope.media = 'This is the locker room';
-    
-        $scope.podcast = false;
-    
-        $scope.image = false;
-    
-        $scope.video = false;
+    })
+    .controller('myPod', function ($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function () {
+            $scope.showMe = !$scope.showMe;
+        }
+    })
+    .controller('myImg', function ($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function () {
+            $scope.showMe = !$scope.showMe;
+        }
+    })
+    .controller('myVid', function ($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function () {
+            $scope.showMe = !$scope.showMe;
+        }
     })
     .controller('TeamController', function($scope) {
         $scope.team = 'The Podcast Team Members';

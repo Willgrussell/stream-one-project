@@ -4,7 +4,7 @@
 
 ### What is this application for?
 
-This is a front-end web application that reports american football news in the USA.
+This is a static front-end website for a group called SnapCount. This group records a podcast weekly reporting on all the latest news on american football.
 
 ### What does it do?
 
@@ -14,12 +14,28 @@ This application allows users to listen to weekly podcasts by the SnapCount team
 
 This application uses a single document page with main nav-bar. The site is powered by Angular JS and styled using Bootstrap.
 
+## Wireframes
+- **Proto.io** was used to design original features and feel of website. Please note documentation file with UI details inside **other** folder.
+
+## Cross Browser Testing
+- Tested features with automated browser website **BrowserStack**, used on browsers highlighted below. I have included a few examples of the tests using a screenshot, these can be found inside **browser-tests** folder. 
+
+
+### Chrome
+- Tested on, responsive with full JS and navigation functionality.
+
+### Safari
+- Tested on, responsive with full JS and navigation functionality.
+
+### Internet Explorer
+- Tested on internet explorer and edge, responsive with full JS and navigation functionality.
+
+### FireFox
+- Tested on, responsive with full JS and navigation functionality. Does not scroll down on media page. 
+
 ## Features
 
 ### Exciting Features
-- None yet!
-
-### Features Left to Implement
 - User Based Features
     - Button slideup and slide down to show and hide information
 - SnapCount Based Features
@@ -28,6 +44,9 @@ This application uses a single document page with main nav-bar. The site is powe
     - Look through images and videos of recent NFL games.
     - Register interest with the mailing team using email.
     - Register booking with the SnapCount team.
+
+### Features Left to Implement
+- None
 
 ## Tech Used
 
@@ -40,6 +59,11 @@ This application uses a single document page with main nav-bar. The site is powe
     - We use **npm** to help manage some of the dependancies in the application.
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of our libraries and frameworks.
+- [BrowserStack](https://browserstack.com)
+    - **BrowserStack** was used for automated cross browser testing.
+- [Proto.io](https://proto.io)
+    - **Proto.io** was used to wireframe the original design and features of the website. Examples can be found inside **other** folder based inside project.
+- [Jasmine]()
 
 ## Contributing
 
