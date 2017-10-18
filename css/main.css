@@ -1,7 +1,7 @@
 /*css for background of url*/
 
 body {
-    background-image: url("stream-one-project/images/nfl-football.jpg");
+    background-image: url("/stream-one-project/images/nfl-football.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
