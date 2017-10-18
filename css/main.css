@@ -6,6 +6,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    display: block;
     min-height: 100%;
     background-size: cover;
     background-position: center center;
