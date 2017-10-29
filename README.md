@@ -4,7 +4,7 @@
 
 ### What is this application for?
 
-This is a static front-end website for a group called SnapCount. This group records a podcast weekly reporting on all the latest news on american football.
+This is a static front-end website for a group called SnapCount. This group records a podcast weekly reporting on all the latest news on American football.
 
 ### What does it do?
 
@@ -74,7 +74,7 @@ This application uses a single document page with main nav-bar. The site is powe
     1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
     2. Once you've done this you'll need to run the following command:
         ```npm install -g bower # this may require sudo on Mac/Linux```
-3. Once **npm** and **bower** are installed, you'll need to install all of the denpendencies in **package.json** and **bower.json**.
+3. Once **npm** and **bower** are installed, you'll need to install all of the dependencies in **package.json** and **bower.json**.
 
     ```
     npm install
@@ -83,7 +83,13 @@ This application uses a single document page with main nav-bar. The site is powe
     ```
     bower install
     ```
-4. After those denpendencies have been installed you'll need to make sure that you have **http-server** installed. You can install  this by running the following: ```npm install -g bower # this also may require sudo on Mac/Linux```
+4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install  this by running the following: ```npm install -g bower # this also may require sudo on Mac/Linux```
 5. Once **http-server** is installed run ```http-server -c-1```
 6. The project will now run on [localhost](https://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
+
+## Author
+- This project has been created by William Russell
+
+## Demo
+- A demo of this project is [stream-one-project](https://willgrussell.github.io/stream-one-project/)
