@@ -53,7 +53,7 @@ body {
 
 /*css for team page*/
 
-#main .team{
+.team:last-of-type{
     margin-bottom: 1000px;
 }
 
@@ -386,9 +386,7 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    .team:last-child{
-        margin-bottom: 500px;
-    }
+    
 }
 
 
@@ -404,9 +402,7 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    .team:last-child{
-        margin-bottom: 500px;
-    }
+    
 }
 
 
@@ -422,7 +418,5 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    .team:last-child{
-        margin-bottom: 500px;
-    }
+    
 }
