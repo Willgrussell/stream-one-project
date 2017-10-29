@@ -380,7 +380,7 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    #main{
+    .team:last-child{
         margin-bottom: 500px;
     }
 }
@@ -398,7 +398,7 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    #main{
+    .team:last-child{
         margin-bottom: 500px;
     }
 }
@@ -416,7 +416,7 @@ input:focus {
         margin: auto;
         text-align: center;
     }
-    #main{
+    .team:last-child{
         margin-bottom: 500px;
     }
 }
