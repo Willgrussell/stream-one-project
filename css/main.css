@@ -364,13 +364,7 @@ input:focus {
     .newsCard {
         text-align: center;
     }
-    /*
-    .podcast .sportCard{
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-*/
+  
 }
 
 
@@ -385,6 +379,9 @@ input:focus {
         display: block;
         margin: auto;
         text-align: center;
+    }
+    #main{
+        margin-bottom: 500px;
     }
 }
 
