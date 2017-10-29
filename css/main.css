@@ -53,9 +53,7 @@ body {
 
 /*css for team page*/
 
-.team:last-of-type{
-    margin-bottom: 1000px;
-}
+
 
 
 /*css for footer*/
@@ -68,6 +66,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: block;
 }
 
 
