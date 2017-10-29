@@ -48,14 +48,14 @@ body {
 /*main content css*/
 
 #main {
-    margin-bottom: 180px;
+    margin-bottom: 200px;
 }
 
 
 /*css for footer*/
 
 footer {
-    margin-top: 20px;
+    margin-top: 10px;
     padding-top: 20px;
     background: rgba(172, 172, 172, 0.88);
     height: 180px;
@@ -401,6 +401,9 @@ input:focus {
         margin: auto;
         text-align: center;
     }
+    #main{
+        margin-bottom: 500px;
+    }
 }
 
 
@@ -415,5 +418,8 @@ input:focus {
         display: block;
         margin: auto;
         text-align: center;
+    }
+    #main{
+        margin-bottom: 500px;
     }
 }
