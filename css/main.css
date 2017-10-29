@@ -53,7 +53,9 @@ body {
 
 /*css for team page*/
 
-
+.team:last-of-type{
+    margin-bottom: 20px;
+}
 
 
 /*css for footer*/
