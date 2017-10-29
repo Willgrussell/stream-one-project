@@ -1,15 +1,17 @@
 <div class="page-header col-12">
-    <h1>{{media}}</h1> </div>
+    <h1>{{media}}</h1> 
+</div>
+
 <div class="container">
     <div class="row podcasts" ng-controller="myPod">
         <button onmouseover="podOver(this)" onmouseout="podOut(this)" type="button" ng-click="myFunc()" class="mediaButton btn btn-primary btn-lg">Podcasts</button>
         <br>
         <div class="col-md-4 col-sm-12 col-xs-12 media-show-hide" id="latest" ng-show="showMe">
-            <figure class="sportCard"> <img src="/images/SC%20Pod%20Image.jpg" alt="Pod Image" height="240px" width="300px">
-                <audio src="/audio/thesnapcount-podcast1.mp3" controls></audio>
+            <figure class="sportCard"> <img src="/stream-one-project/images/SC%20Pod%20Image.jpg" alt="Pod Image" height="240px" width="300px">
+                <audio src="/stream-one-project/audio/thesnapcount-podcast1.mp3" controls></audio>
                 <figcaption class="sportFig"><strong>Pod updated 07/09/2017: The team discuss preseason</strong></figcaption>
             </figure>
-            <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sapiente tenetur nobis laborum, cumque at aliquid vero quis minima quos, reiciendis. Molestiae obcaecati, corporis ab quasi atque fugit eaque doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illum placeat quod minima incidunt repellendus sequi nostrum, iste aliquid laboriosam doloribus ipsum in commodi consequatur accusamus veniam fugit perferendis modi.</p>
+            <p class="card">The team talk long and hard about <b>Rookies</b>, <b>All Pro's</b>, <b>Injuries</b>, <b>Trades</b>, <b>Mega Deals</b>, Commissioners and Dictators are all discussed as we wade our way through the NFL preaseason action. Listen in to here what the team thought about <b>your team!!</b></p>
         </div>
     </div>
     <div class="row images" ng-controller="myImg">
@@ -18,27 +20,27 @@
         <div class="row media-show-hide" ng-show="showMe">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/images/nfl-chiefs-broncos.jpg" target="_blank"> <img src="/images/nfl-chiefs-broncos.jpg" alt="sport" style="width:100%">
+                    <a href="/stream-one-project/images/nfl-chiefs-broncos.jpg" target="_blank"> <img src="/stream-one-project/images/nfl-chiefs-broncos.jpg" alt="sport" style="width:100%">
                         <div class="caption">
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <p>The moment when the bronco's tight-end caught a long ball from Trevor Simein to beat out the chiefs defence for a 45 yard touchdown</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/images/nfl-jets-pat.jpg" target="_blank"> <img src="/images/nfl-jets-pat.jpg" alt="sports" style="width:100%">
+                    <a href="/stream-one-project/images/nfl-jets-pat.jpg" target="_blank"> <img src="/stream-one-project/images/nfl-jets-pat.jpg" alt="sports" style="width:100%">
                         <div class="caption">
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <p>A bitter rivalry between two teams in the AFC East division. The New York Jets and New England Patriots.</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/images/stafford-contract.jpg" target="_blank"> <img src="/images/stafford-contract.jpg" alt="sports" style="width:100%">
+                    <a href="/stream-one-project/images/stafford-contract.jpg" target="_blank"> <img src="/stream-one-project/images/stafford-contract.jpg" alt="sports" style="width:100%">
                         <div class="caption">
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <p>Matthew Stafford has just signed the largest deal of any quaterback ever, sure to be one of many coming by the end of this season.</p>
                         </div>
                     </a>
                 </div>
@@ -49,8 +51,8 @@
         <button type="button" onmouseover="vidOver(this)" onmouseout="vidOut(this)" ng-click="myFunc()" class="mediaButton btn btn-primary btn-lg">Videos</button>
         <br>
         <div class="media-show-hide embed-responsive embed-responsive-4by3" ng-show="showMe">
-            <video src="/video/nfl-top-throws-2017.mp4" controls poster="/images/nfl-seahawks.jpg"></video>
-            <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis accusantium fugiat qui sint impedit maxime nihil aut odio eius suscipit itaque et totam accusamus id perspiciatis deserunt, ex ad nesciunt!</p>
+            <video src="/stream-one-project/video/nfl-top-throws-2017.mp4" controls poster="/stream-one-project/images/nfl-seahawks.jpg"></video>
+            <p class="card">A look at the best throws through all the preseason games from week one to week four.</p>
         </div>
     </div>
 </div>
