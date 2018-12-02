@@ -1,25 +1,20 @@
 # SnapCount Front End Project
 
 ## Overview
-
 ### What is this application for?
-
 This is a static front-end website for a group called SnapCount. This group records a podcast weekly reporting on all the latest news on american football.
 
 ### What does it do?
-
 This application allows users to listen to weekly podcasts by the SnapCount team, look at images and video of recent weeks of NFL sport.
 
 ### How does it work?
-
 This application uses a single document page with main nav-bar. The site is powered by Angular JS and styled using Bootstrap.
 
 ## Wireframes
-- **Proto.io** was used to design original features and feel of website. Please note documentation file with UI details inside **other** folder.
+- **Proto.io** was used to design original features and feel of website. Please view [Wireframes](other/)
 
 ## Cross Browser Testing
 - Tested features with automated browser website **BrowserStack**, used on browsers highlighted below. I have included a few examples of the tests using a screenshot, these can be found inside **browser-tests** folder. 
-
 
 ### Chrome
 - Tested on, responsive with full JS and navigation functionality.
@@ -34,7 +29,6 @@ This application uses a single document page with main nav-bar. The site is powe
 - Tested on, responsive with full JS and navigation functionality. Does not scroll down on media page. 
 
 ## Features
-
 ### Exciting Features
 - User Based Features
     - Button slideup and slide down to show and hide information
@@ -49,7 +43,6 @@ This application uses a single document page with main nav-bar. The site is powe
 - None
 
 ## Tech Used
-
 ### Technology used includes:
 - [AngularJS](https://angularjs.org/)
     - We use **AngularJS** to handle page routing.
@@ -67,7 +60,6 @@ This application uses a single document page with main nav-bar. The site is powe
     - **Jasmine** has been used to test javascript code during my project.
 
 ## Contributing
-
 ### Getting the code up and running
 1. Firstly you need to clone this repository by running the ```git clone <project's Github URL>``` command.
 2. After you've that you'll need to make sure that you have **npm** and **bower** installed
